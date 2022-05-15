@@ -1,3 +1,12 @@
+@media screen and(max-width: 1199px) {
+  .section-wedo{
+      display: none;
+  }
+}
+
+// @media screen and(min-width: 768px) {}
+
+@media screen and(min-width: 1200px) {
 .wedo-title,
 .team-title,
 .clients-title {
@@ -29,4 +38,5 @@
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
     pointer-events: none;
+}
 }

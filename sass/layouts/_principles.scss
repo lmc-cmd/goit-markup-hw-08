@@ -1,3 +1,12 @@
+
+@media screen and(min-width: 480px) {
+    
+}
+
+@media screen and(min-width: 768px) {}
+
+@media screen and(min-width: 1200px) {
+    
 .principles-list,
 .team-list {
     display: flex;
@@ -33,4 +42,5 @@
     color: var(--secondary-text-color);
     width: 270px;
     height: 75px;
+}
 }

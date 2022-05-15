@@ -167,11 +167,28 @@ p {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   align-items: center;
-  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    display: flex;
+  }
 }
 
 .signup {
@@ -385,48 +402,51 @@ p {
   fill: var(--accent-color);
 }
 
-.navi {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .navi__list,
+  .contacts {
+    display: none;
+  }
 }
 
-.navi a,
-.footer-contactus,
-.link-address {
-  position: relative;
-  transition: color var(--transition);
-}
-
-.active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  bottom: 0;
-  left: 0;
-}
-
-.navi__list {
-  display: flex;
-}
-
-.navi__list a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding: 32px 0px;
-  color: var(--primary-text-color);
-  transition: color var(--transition);
-}
-
-.navi__list li:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts__links:last-child {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .navi {
+    display: flex;
+    align-items: center;
+  }
+  .navi a,
+  .footer-contactus,
+  .link-address {
+    position: relative;
+    transition: color var(--transition);
+  }
+  .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    left: 0;
+  }
+  .navi__list {
+    display: flex;
+  }
+  .navi__list a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+    color: var(--primary-text-color);
+    transition: color var(--transition);
+  }
+  .navi__list li:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts__links:last-child {
+    margin-left: 50px;
+  }
 }
 
 .porducts-list {
@@ -660,6 +680,7 @@ p {
 .clients-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .client-item {
@@ -806,44 +827,41 @@ p {
   margin-right: 8px;
 }
 
-.principles-list,
-.team-list {
-  display: flex;
-}
-
-.principles-link {
-  display: flex;
-  justify-content: center;
-}
-
-.principles-item:not(:last-child),
-.section-wedo li:not(:last-child),
-.team-list-card:not(:last-child),
-.client-link:not(:last-child) {
-  margin-right: 30px;
-}
-
-.section-principles {
-  padding-top: 94px;
-}
-
-.principles-list h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
-  width: 270px;
-  height: 16px;
-  margin-bottom: 10px;
-}
-
-.principles-list p {
-  font-size: 14px;
-  line-height: 1.714;
-  color: var(--secondary-text-color);
-  width: 270px;
-  height: 75px;
+@media screen and (min-width: 1200px) {
+  .principles-list,
+  .team-list {
+    display: flex;
+  }
+  .principles-link {
+    display: flex;
+    justify-content: center;
+  }
+  .principles-item:not(:last-child),
+  .section-wedo li:not(:last-child),
+  .team-list-card:not(:last-child),
+  .client-link:not(:last-child) {
+    margin-right: 30px;
+  }
+  .section-principles {
+    padding-top: 94px;
+  }
+  .principles-list h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    width: 270px;
+    height: 16px;
+    margin-bottom: 10px;
+  }
+  .principles-list p {
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--secondary-text-color);
+    width: 270px;
+    height: 75px;
+  }
 }
 
 .team {
@@ -880,36 +898,41 @@ p {
   justify-content: center;
 }
 
-.wedo-title,
-.team-title,
-.clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
+@media screen and (max-width: 1199px) {
+  .section-wedo {
+    display: none;
+  }
 }
 
-.section-wedo ul {
-  display: flex;
-}
-
-.wedo-card {
-  position: relative;
-}
-
-.wedo-card p {
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 27px 0px;
-  color: var(--text-color-white);
-  background: rgba(47, 48, 58, 0.8);
-  text-align: center;
-  pointer-events: none;
+@media screen and (min-width: 1200px) {
+  .wedo-title,
+  .team-title,
+  .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+  }
+  .section-wedo ul {
+    display: flex;
+  }
+  .wedo-card {
+    position: relative;
+  }
+  .wedo-card p {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0px;
+    color: var(--text-color-white);
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    pointer-events: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
