@@ -1,0 +1,23 @@
+.footer {
+    background: #2f303a;
+    padding: 60px 0px;
+}
+.footer .container {
+    align-items: baseline;
+}
+
+
+.footer-address {
+    font-style: normal;
+    margin-right: 70px;
+    margin-top: 20px;
+    & li:not(:last-child){
+        margin-bottom: 9px;
+    }
+}
+
+.footer li :hover,
+.footer li :focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}

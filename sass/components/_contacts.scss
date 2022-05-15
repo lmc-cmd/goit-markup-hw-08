@@ -1,0 +1,24 @@
+.contacts {
+    display: flex;
+}
+
+.contacts a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color var(--transition);
+    position: relative;
+}
+
+.contacts__icon {
+    fill: inherit;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.footer-contactus {
+    font-size: 14px;
+    line-height: 1.46;
+    color: rgba(255, 255, 255, 0.6);
+}

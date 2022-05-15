@@ -1,0 +1,22 @@
+.roof {
+    background: #ffffff;
+    border-bottom: 1px solid #ececec;
+    &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+}
+.roof .container {
+    height: 80px;
+    justify-content: space-between;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+}
+.roof li :hover,
+.roof li :focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}

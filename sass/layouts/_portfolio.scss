@@ -1,0 +1,27 @@
+.portfolio .container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .container ul {
+    display: inherit;
+}
+.portfolio {
+    background-color: #fff;
+}
+
+.portfolio h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.butt-list {
+    margin-bottom: 50px;
+    width: 612px;
+    :not(:last-child) {
+        margin-right: 8px;
+    }
+}

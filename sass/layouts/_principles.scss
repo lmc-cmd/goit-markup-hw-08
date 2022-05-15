@@ -1,0 +1,36 @@
+.principles-list,
+.team-list {
+    display: flex;
+}
+
+.principles-link {
+    display: flex;
+    justify-content: center;
+}
+
+.principles-item:not(:last-child),
+.section-wedo li:not(:last-child),
+.team-list-card:not(:last-child),
+.client-link:not(:last-child) {
+    margin-right: 30px;
+}
+.section-principles {
+    padding-top: 94px;
+}
+.principles-list h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    width: 270px;
+    height: 16px;
+    margin-bottom: 10px;
+}
+.principles-list p {
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--secondary-text-color);
+    width: 270px;
+    height: 75px;
+}

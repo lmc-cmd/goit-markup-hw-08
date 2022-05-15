@@ -1,0 +1,52 @@
+.joinus-container h2,
+.submit-footer h2 {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    margin-bottom: 20px;
+}
+
+.joinus-container li {
+    width: 44px;
+    height: 44px;
+}
+.submit-field {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    color: var(--text-color-white);
+    border: 1px solid var(--secondary-text-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.submit-form button {
+    position: relative;
+    height: 50px;
+    width: 200px;
+    padding: 10px 29px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: white;
+}
+
+.submit-button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    display: flex;
+}
