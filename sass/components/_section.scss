@@ -1,10 +1,19 @@
 
+.team{
+    background-color: #f5f4fa;
+    padding: 60px 0px;
+}
+.our-clients{
+    padding: 60px 0px;
+}
+
 
 
 @media screen and (min-width: 1200px){
 .section-wedo,
 .our-products,
-.our-clients {
+.our-clients,
+.team{
     padding: 94px 0px;
 }
 .section-wedo .container,

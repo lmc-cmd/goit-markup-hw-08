@@ -1,3 +1,6 @@
+.section-principles {
+    padding-top: 60px;
+}
 .svg-div {
     width: 100%;
     height: 120px;
@@ -8,32 +11,12 @@
     border-radius: 4px;
     margin-bottom: 30px;
 }
-@media screen and(min-width: 480px) {
-    
-}
-
-@media screen and(min-width: 768px) {}
-
-@media screen and(min-width: 1200px) {
-    
-.principles-list,
-.team-list {
-    display: flex;
-}
-
-.principles-link {
-    display: flex;
-    justify-content: center;
-}
-
-.principles-item:not(:last-child),
-.section-wedo li:not(:last-child),
-.team-list-card:not(:last-child),
-.client-link:not(:last-child) {
-    margin-right: 30px;
-}
-.section-principles {
-    padding-top: 94px;
+.principles-list p {
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--secondary-text-color);
+    width: 270px;
+    height: 75px;
 }
 .principles-list h3 {
     font-weight: 700;
@@ -45,11 +28,57 @@
     height: 16px;
     margin-bottom: 10px;
 }
-.principles-list p {
-    font-size: 14px;
-    line-height: 1.714;
-    color: var(--secondary-text-color);
-    width: 270px;
-    height: 75px;
+@media screen and(min-width: 480px) {
+    
+}
+
+@media screen and(min-width: 768px) {
+.principles-list,
+.team-list {
+display: flex;
+flex-wrap: wrap;
+}
+.svg-div{
+    width: 354px;
+}
+.principles-item:nth-child(odd){
+    margin-right: 30px;
+}
+
+
+@media screen and(min-width: 1200px) {
+.svg-div {
+        width: 270px;
+    }
+.principles-link {
+    display: flex;
+    justify-content: center;
+}
+.principles-item:not(:last-child),
+.section-wedo li:not(:last-child),
+.team-list-card:not(:last-child),
+.client-link:not(:last-child) {
+    margin-right: 30px;
+}
+.section-principles {
+    padding-top: 94px;
+}
+// .principles-list h3 {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     color: var(--primary-text-color);
+//     width: 270px;
+//     height: 16px;
+//     margin-bottom: 10px;
+// }
+// .principles-list p {
+//     font-size: 14px;
+//     line-height: 1.714;
+//     color: var(--secondary-text-color);
+//     width: 270px;
+//     height: 75px;
+// }
 }
 }
