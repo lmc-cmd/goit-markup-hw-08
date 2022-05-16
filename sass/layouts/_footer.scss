@@ -1,3 +1,4 @@
+@media screen and (min-width: 1200px) {
 .footer {
     background: #2f303a;
     padding: 60px 0px;
@@ -20,4 +21,5 @@
 .footer li :focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
+}
 }

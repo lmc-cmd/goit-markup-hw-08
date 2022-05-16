@@ -1,7 +1,7 @@
 
 .section-main {
-    width: 480px;
-    height: 400px;
+    max-width: 480px;
+    max-height: 400px;
     padding: 118px 0px;
     margin-left: auto;
     margin-right: auto;
@@ -9,8 +9,7 @@
         url(../images/bg-main.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-            
-            
+                
 }
 .main-title{
             font-weight: 900;
@@ -23,15 +22,11 @@
             margin-bottom: 30px;
 }
 
-
-
-
 @media screen and (min-width: 1200px) {
 .section-main {
     padding: 200px 0px;
-    height: 600px;
-    width: 100%;
-    margin: auto;
+    max-height: 600px;
+    max-width: 100%;
 }
 
 .main-title {
