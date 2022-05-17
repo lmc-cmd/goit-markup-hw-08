@@ -1,48 +1,47 @@
-
 .section-main {
-    width: 100%;
-    max-height: 400px;
-    padding: 118px 0px;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/main_mob_1x.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+  width: 100%;
+  max-height: 400px;
+  padding: 118px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main_mob_1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-@media screen and (min-width: 480px) and (max-width:767px){
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/main_tab_1x.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg-main.jpg);
+      url(../images/main_tab_1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/bg-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-}
-.main-title{
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;        
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-color-white);
-    margin-bottom: 30px;
+.main-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
-.section-main {
+  .section-main {
     padding: 200px 0px;
     max-height: 600px;
     max-width: 100%;
-}
+  }
 
-.main-title {
+  .main-title {
     font-size: 44px;
     line-height: 1.36;
-}
+  }
 }
