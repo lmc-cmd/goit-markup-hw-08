@@ -2,10 +2,11 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .portfolio .container ul {
-    display: inherit;
+    display: flex;
     flex-wrap: wrap;
 
 }
@@ -25,11 +26,16 @@
     :not(:last-child) {
         margin-right: 8px;
     }
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px){
         margin-bottom: 30px;
         
     }
     @media screen and (min-width: 1200px){
         margin-bottom: 50px;
+    }
+}
+.butt-list li {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 15px;
     }
 }
