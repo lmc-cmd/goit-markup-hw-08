@@ -1134,9 +1134,14 @@ p {
   padding: 118px 0px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_mob_1x.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .section-main {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_mob_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1198,7 +1203,7 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--primary-text-color);
 }
 
