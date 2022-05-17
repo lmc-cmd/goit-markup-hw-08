@@ -6,10 +6,22 @@
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bg-main.jpg);
+        url(../images/main_mob_1x.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-                
+
+@media screen and (min-width: 480px) and (max-width:767px){
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main_tab_1x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 }
 .main-title{
     font-weight: 900;

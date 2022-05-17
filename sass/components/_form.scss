@@ -6,11 +6,12 @@
     padding: 40px;
     align-items: center;
 
-    &h3 {
+    & h3 {
     font-size: 20px;
     line-height: 1.15;
     color: var(--primary-text-color);
     margin-bottom: 12px;
+    text-align: center;
     }
 }
 .signup-item {
@@ -36,7 +37,7 @@
 }
 .signup-field {
     height: 40px;
-    width: 448px;
+    width: 100%;
     padding-left: 42px;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -56,13 +57,16 @@
                 border-color var(--transition)
             }
         }
+    @media screen and (min-width:1200px) {
+        width: 448px;
         
+    }
 }
 
 .signup-item textarea {
     padding: 16px 12px;
     margin-top: 4px;
-    width: 448px;
+    width: 100%;
     height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -78,16 +82,29 @@
 }
 
 .signup-check-item {
-    display: flex;
+    width: 100%;
     align-items: center;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.16;
     color: #757575;
     margin-bottom: 30px;
-    margin-left: 10px;
+    margin-left: 8px;
     & span{
         text-decoration-line: underline;
         :visited{ color: var(--accent-color);
         }
+    }
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 370px;
+    }
+    @media screen and (min-width:1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.714;
+    color: #757575;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
     }
 }
 
@@ -98,8 +115,9 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.signup-list button {
+.signup-list{
+    width: 100%;
+& button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -112,6 +130,7 @@
     border-radius: 4px;
     border: transparent;
     cursor: pointer;
+}
 }
 
 .signup-checkbox {
@@ -129,7 +148,10 @@
     height: 15px;
     border-radius: 4px;
     border: 2px solid #212121;
-    left: -4px;
+    left: -12px;
+    @media screen and (min-width:1200px) {
+    left: -10px;
+}
 }
 
 .cheked-symbol {
