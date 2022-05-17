@@ -2,7 +2,18 @@
 .contacts {
     display: none;
 }
-
+.navi__list a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 22px 0px;
+    color: var(--primary-text-color);
+    transition: color var(--transition);
+    @media screen and(min-width: 1200px) {
+    padding: 33px 0px;
+}
+}
 
 @media screen and(min-width: 768px) {
 .navi {
@@ -25,26 +36,27 @@
     background-color: var(--accent-color);
     bottom: 0;
     left: 0;
+    border-radius: 4px;
 }
 .navi__list,
 .contacts {
     display: flex;
 }
 
-.navi__list a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding: 32px 0px;
-    color: var(--primary-text-color);
-    transition: color var(--transition);
+
 }
 
 .navi__list li:not(:last-child) {
     margin-right: 50px;
 }
+
+
+@media screen and(min-width: 1200px){
 .contacts__links:last-child {
     margin-left: 50px;
 }
+}
+
+.navi__list {
+    margin-right: 84px;
 }

@@ -6,6 +6,8 @@
 
 .portfolio .container ul {
     display: inherit;
+    flex-wrap: wrap;
+
 }
 .portfolio {
     background-color: #fff;
@@ -19,9 +21,15 @@
     color: var(--primary-text-color);
 }
 .butt-list {
-    margin-bottom: 50px;
-    width: 612px;
+    margin-bottom: 40px;
     :not(:last-child) {
         margin-right: 8px;
+    }
+    @media screen and (min-width: 786px){
+        margin-bottom: 30px;
+        
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
     }
 }
