@@ -1,100 +1,96 @@
-
-.clients-list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+.clients-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .client-link {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #afb1b8;
-    @media screen and (max-width:479px){
-        margin-bottom: 15px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 210px;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
-    @media screen and (min-width: 480px) and (max-width: 767px){
-        width: 210px;
-        &:not(:nth-last-child(-n + 2)){
-            margin-bottom: 30px;
-        }
-        &:nth-child(odd){
-            margin-right: 30px;
-        }
+    &:nth-child(odd) {
+      margin-right: 30px;
     }
-    @media screen and (min-width: 768px) and(max-width: 1199px) {
-        width: 226px; 
-        &:nth-child(-n + 3) {
-        margin-bottom: 30px;
-        }
-        &:not(:nth-child(3n)){
-        margin-right: 30px;
-        }
-    } 
+  }
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
+    width: 226px;
+    &:nth-child(-n + 3) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
 }
 .link-image {
-    width: 170px;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 1px solid #afb1b8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    color: #afb1b8;
-    position: relative;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  position: relative;
+  transition: color var(--transition), border-color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  &:focus::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: color var(--transition), border-color var(--transition);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
-    }
-
-    &:focus::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: color var(--transition), border-color var(--transition);
-    }
+  }
 }
 .client-item {
-    width: 106px;
-    height: 60px;
-    fill: currentColor;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 .link-image {
-    width: 100%;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 1px solid #afb1b8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    color: #afb1b8;
-    position: relative;
+  width: 100%;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  position: relative;
+  transition: color var(--transition), border-color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  &:focus::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: color var(--transition), border-color var(--transition);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
-    }
-
-    &:focus::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: color var(--transition), border-color var(--transition);
-    }
+  }
 }
-
-
 
 // @media screen and (min-width: 480px) {
 // .client-link{
@@ -102,27 +98,11 @@
 //     height: 92px;
 //     }
 
-@media screen and (min-width: 1200px){
-.clients-list {
+@media screen and (min-width: 1200px) {
+  .clients-list {
     flex-wrap: nowrap;
-    }
-.our-clients {
+  }
+  .our-clients {
     justify-content: center;
-
-}
-
-
-
-
-
-// .client-link {
-//     width: 170px;
-//     height: 92px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     color: #afb1b8;
-// }
-
-
+  }
 }

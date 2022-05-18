@@ -1,33 +1,33 @@
-  .section-wedo{
-      display: none;
-  }
+.section-wedo {
+  display: none;
+}
 
 // @media screen and(min-width: 768px) {}
 
 @media screen and(min-width: 1200px) {
-.section-wedo{
+  .section-wedo {
     display: block;
-}
-.wedo-title,
-.team-title,
-.clients-title {
+  }
+  .wedo-title,
+  .team-title,
+  .clients-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
     color: var(--primary-text-color);
     margin-bottom: 50px;
-}
+  }
 
-.section-wedo ul {
+  .section-wedo ul {
     display: flex;
-}
+  }
 
-.wedo-card {
+  .wedo-card {
     position: relative;
-}
+  }
 
-.wedo-card p {
+  .wedo-card p {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -39,5 +39,5 @@
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
     pointer-events: none;
-}
+  }
 }
