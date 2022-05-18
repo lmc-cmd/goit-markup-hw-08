@@ -5,16 +5,15 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   cursor: pointer;
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     color: var(--accent-color);
   }
-  @media screen and (min-width: 480px){
-      font-size: 40px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-      color: var(--primary-text-color);
-      
-    
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
   }
 }
 .menu__list li:not(:last-child) {
@@ -26,27 +25,17 @@
   }
 }
 
-
 .menu__contacts {
   display: flex;
   flex-direction: column;
-  // margin-bottom: auto;
 }
 .menu__sociallist {
-    display: flex;
-    flex-wrap: wrap;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: center;
-:not(:last-child) {
-        margin-right: 20px;
-
-        }
+  display: flex;
+  flex-wrap: wrap;
+  :not(:last-child) {
+    margin-right: 20px;
+  }
 }
-:last-child{
-border: transparent;
-}
-
 
 .menu__tel {
   margin-bottom: 30px;
@@ -58,8 +47,8 @@ border: transparent;
     color: #2196f3;
     @media screen and (min-width: 480px) {
       font-size: 34px;
+    }
   }
-}
 }
 .menu__mail {
   a {
@@ -74,61 +63,21 @@ border: transparent;
   margin-bottom: 60px;
 }
 
-.menu__socitem{
-    position: relative;
-       font-weight: 500;
-        font-size: 18px;
-        line-height: 1.46;
-        letter-spacing: 0.02em;
-        color: var(--accent-color);
+.menu__socitem {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.46;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
-
-.menu__sociallist li:not(:last-child) .menu__socitem:after{
-    content: '';
-    position: absolute;
-        height: 22px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transform: rotate(180deg);
-        bottom: 0;
-        right: -10px;
-
+.menu__sociallist li:not(:last-child) .menu__socitem:after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(180deg);
+  bottom: 0;
+  right: -10px;
 }
-
-// NOTLADDSFD
-
-  // .menu__sociallist a:after{
-//   content: '';
-//     position: absolute;
-//     height: 22px;
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-//     transform: rotate(180deg);
-//     bottom: 0;
-//     right: -10px;
-    
-// }
-// .menu__sociallist a:last-child:after{
-// border: transparent
-// }
-// border: 1px solid rgba(33, 33, 33, 0.2);
-// transform: rotate(90deg);
-
-// contacts
-// font-family: 'Roboto';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 24px;
-// line-height: 28px;
-// letter-spacing: 0.02em;
-
-// tel
-// font-family: 'Roboto';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 34px;
-// line-height: 40px;
-// /* identical to box height */
-
-// letter-spacing: 0.02em;
-
-// color: #2196F3;

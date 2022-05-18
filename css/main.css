@@ -559,17 +559,10 @@ p {
 .menu__sociallist {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .menu__sociallist :not(:last-child) {
   margin-right: 20px;
-}
-
-:last-child {
-  border: transparent;
 }
 
 .menu__tel {
@@ -612,7 +605,7 @@ p {
 }
 
 .menu__sociallist li:not(:last-child) .menu__socitem:after {
-  content: '';
+  content: "";
   position: absolute;
   height: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1317,7 +1310,7 @@ p {
   padding: 118px 0px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_mob_1x.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Main_mob_1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
