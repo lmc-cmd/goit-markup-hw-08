@@ -1319,7 +1319,7 @@ p {
   margin-right: auto;
 }
 
-@media screen and (min-width: 40px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .section-main {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_mob_1x.jpg);
     background-size: cover;
