@@ -487,6 +487,12 @@ p {
   padding: 48px 40px;
 }
 
+@media screen and (min-width: 480px) {
+  .menu-container.is-open {
+    justify-content: unset;
+  }
+}
+
 .roof {
   position: relative;
 }
@@ -537,6 +543,10 @@ p {
   justify-content: center;
 }
 
+.menu__sociallist :not(:last-child) {
+  margin-right: 20px;
+}
+
 .menu__tel {
   margin-bottom: 30px;
 }
@@ -559,6 +569,25 @@ p {
 
 .menu__contacts {
   margin-bottom: 60px;
+}
+
+.menu__socitem {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.46;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu__socitem:after {
+  content: '';
+  position: absolute;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(180deg);
+  bottom: 0;
+  right: -10px;
 }
 
 .modal {

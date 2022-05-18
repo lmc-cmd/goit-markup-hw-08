@@ -25,6 +25,9 @@
   align-items: flex-end;
   flex-direction: row;
   justify-content: center;
+:not(:last-child) {
+        margin-right: 20px;
+    }
 }
 
 .menu__tel {
@@ -49,6 +52,34 @@
 .menu__contacts {
   margin-bottom: 60px;
 }
+
+.menu__socitem{
+    position: relative;
+       font-weight: 500;
+        font-size: 18px;
+        line-height: 1.46;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+}
+
+// .menu__socitem:not(:last-child){
+//         margin-right: 20px;
+//     }
+
+.menu__socitem:after{
+    content: '';
+    position: absolute;
+        height: 22px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(180deg);
+        bottom: 0;
+        right: -10px;
+
+}
+
+// border: 1px solid rgba(33, 33, 33, 0.2);
+// transform: rotate(90deg);
+
 // contacts
 // font-family: 'Roboto';
 // font-style: normal;
