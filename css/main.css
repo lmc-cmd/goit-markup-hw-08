@@ -1574,6 +1574,9 @@ p {
   .team-list-card {
     width: 450px;
   }
+  .team-list-card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1582,9 +1585,6 @@ p {
   }
   .team-list-card:nth-child(odd) {
     margin-right: 30px;
-  }
-  .team-list-card:nth-last-child(-n + 2) {
-    margin-bottom: 0;
   }
 }
 
