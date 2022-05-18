@@ -83,11 +83,8 @@ border: transparent;
         color: var(--accent-color);
 }
 
-// .menu__socitem:not(:last-child){
-//         margin-right: 20px;
-//     }
 
-.menu__socitem:after{
+.menu__sociallist li:not(:last-child) .menu__socitem:after{
     content: '';
     position: absolute;
         height: 22px;
@@ -98,7 +95,7 @@ border: transparent;
 
 }
 
-
+// NOTLADDSFD
 
   // .menu__sociallist a:after{
 //   content: '';
