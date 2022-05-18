@@ -39,6 +39,9 @@
 .hidden-card {
     position: relative;
     overflow: hidden;
+    img{
+        width: 100%;
+    }
 }
 
 .hidden-text {

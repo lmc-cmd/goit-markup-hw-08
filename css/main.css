@@ -485,6 +485,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
+  z-index: 2;
 }
 
 @media screen and (min-width: 480px) {
@@ -513,12 +514,31 @@ p {
   }
 }
 
+.menu-button:hover,
+.menu-button:focus {
+  fill: var(--accent-color);
+}
+
 .menu__link {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 28px;
+  line-height: 1.17x;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .menu__link {
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
 }
 
 .menu__list li:not(:last-child) {
@@ -538,6 +558,7 @@ p {
 
 .menu__sociallist {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   flex-direction: row;
   justify-content: center;
@@ -547,16 +568,26 @@ p {
   margin-right: 20px;
 }
 
+:last-child {
+  border: transparent;
+}
+
 .menu__tel {
   margin-bottom: 30px;
 }
 
 .menu__tel a {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .menu__tel a {
+    font-size: 34px;
+  }
 }
 
 .menu__mail a {
@@ -748,6 +779,10 @@ p {
 .hidden-card {
   position: relative;
   overflow: hidden;
+}
+
+.hidden-card img {
+  width: 100%;
 }
 
 .hidden-text {
@@ -1251,6 +1286,12 @@ p {
   display: flex;
 }
 
+.roof li :hover,
+.roof li :focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 @media screen and (min-width: 1200px) {
   .roof {
     background: #ffffff;
@@ -1267,11 +1308,6 @@ p {
   .contacts__link {
     display: flex;
     align-items: center;
-  }
-  .roof li :hover,
-  .roof li :focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
   }
 }
 
