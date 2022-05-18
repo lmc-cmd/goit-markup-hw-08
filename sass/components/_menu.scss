@@ -36,9 +36,12 @@
   }
 }
 
-.roof {
+.roof{
   position: relative;
 }
+// .roof .container {   приязать к контейнеру - но не 100% закрывает меню (а по w контейнера
+//   position: relative;
+// }
 
 .menu-container {
   display: none;
@@ -46,7 +49,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  // text-align: center;
   background-color: white;
   height: 100vh;
   // transform: translateX(100%);

@@ -741,21 +741,32 @@ p {
 }
 
 .porducts-list li {
-  margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .porducts-list li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .porducts-list li:nth-child(odd) {
     margin-right: 30px;
   }
+  .porducts-list li:nth-child(-n + 8) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .porducts-list li:not(:nth-child(3n)) {
     margin-right: 30px;
+  }
+  .porducts-list li:nth-child(-n + 6) {
+    margin-bottom: 30px;
   }
 }
 
@@ -852,16 +863,14 @@ p {
   .section-wedo,
   .our-products,
   .our-clients,
-  .team,
-  .section-principles {
+  .team {
     padding: 60px 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-wedo, .our-products,
-  .our-clients, .team,
-  .section-principles {
+  .our-clients, .team {
     padding: 94px 0px;
   }
   .section-wedo .container,
@@ -1063,7 +1072,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1224,6 +1233,9 @@ p {
     flex-direction: column;
     align-items: center;
   }
+  .footer-address li:not(:last-child) {
+    margin-bottom: 8px;
+  }
   .footer-address ul {
     display: flex;
     flex-direction: column;
@@ -1285,15 +1297,17 @@ p {
   border-color: var(--accent-color);
 }
 
+.roof {
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.roof:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 @media screen and (min-width: 1200px) {
-  .roof {
-    background: #ffffff;
-    border-bottom: 1px solid #ececec;
-  }
-  .roof:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-  }
   .roof .container {
     height: 80px;
     justify-content: space-between;
@@ -1405,7 +1419,14 @@ p {
 }
 
 .section-principles {
-  padding-top: 60px;
+  padding-top: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-principles {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 
 .svg-div {
@@ -1464,7 +1485,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .principles-list h3 {
     text-align: center;
     width: 100%;

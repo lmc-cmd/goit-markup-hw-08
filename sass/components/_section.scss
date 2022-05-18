@@ -13,9 +13,8 @@
     .section-wedo,
         .our-products,
         .our-clients,
-        .team,
-        .section-principles {
-            padding: 60px 0px
+        .team{
+            padding: 60px 0px;
 }
 }
 
@@ -23,8 +22,8 @@
 
 @media screen and (min-width: 1200px){
 .section-wedo, .our-products,
-.our-clients, .team, 
-.section-principles{
+.our-clients, .team
+{
     padding: 94px 0px;
 }
 

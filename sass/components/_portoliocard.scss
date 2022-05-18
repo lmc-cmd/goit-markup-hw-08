@@ -1,101 +1,106 @@
 .porducts-list {
-    flex-wrap: wrap;
-    // justify-content: center;
-    max-width: 1200px;
-    @media screen and (min-width:1200px) {
-        flex-direction: unset;
-        
-}
+  flex-wrap: wrap;
+  max-width: 1200px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+  }
 }
 
 .porducts-list li {
-    margin-bottom: 30px;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-    box-sizing: border-box;
-      @media screen and (min-width:768px) and (max-width:1199px){
-        &:nth-child(odd){
-        margin-right: 30px;
-        }
-
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
-
-    @media screen and (min-width:1200px) {
-    &:not(:nth-child(3n)){
-        margin-right: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
     }
-
-}
+    &:nth-child(-n + 8) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .product-item {
-    padding: 20px 24px;
+  padding: 20px 24px;
 }
 .portfolio p {
-    font-size: 16px;
-    line-height: 1.875;
-    color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--secondary-text-color);
 }
 .hidden-card {
-    position: relative;
-    overflow: hidden;
-    img{
-        width: 100%;
-    }
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 
 .hidden-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 294px;
-    width: 100%;
-    transform: translateY(294px);
-    background: rgba(33, 150, 243, 0.9);
-    transition: transform var(--transition);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 294px;
+  width: 100%;
+  transform: translateY(294px);
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform var(--transition);
 }
 
 .product-card a:hover .hidden-text,
 .product-card a:focus .hidden-text {
-    opacity: 1;
-    transform: translateY(0%);
-    transition: transform var(--transition);
+  opacity: 1;
+  transform: translateY(0%);
+  transition: transform var(--transition);
 }
 
 .hidden-card p {
-    position: absolute;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    color: var(--text-color-white);
-    width: 100%;
-    height: 294px;
-    pointer-events: none;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 0px 20px;
-}
-
-.product-card{
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-    @media screen and (min-width:768px){
-        width: 354px;
-    }
-   
-    @media screen and (min-width:1200px) {
-        width: 370px;
-    }
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--text-color-white);
+  width: 100%;
+  height: 294px;
+  pointer-events: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0px 20px;
 }
 
 .product-card {
-    transition: box-shadow var(--transition),
-        transform var(--transition);
-        &:hover, &focus{
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-                transition: box-shadow var(--transition);
-        }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.product-card {
+  transition: box-shadow var(--transition), transform var(--transition);
+  &:hover,
+  &focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow var(--transition);
+  }
 }

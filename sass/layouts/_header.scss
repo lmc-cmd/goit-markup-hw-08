@@ -8,7 +8,7 @@
   border-color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
+
   .roof {
     background: #ffffff;
     border-bottom: 1px solid #ececec;
@@ -17,6 +17,8 @@
       border-color: var(--accent-color);
     }
   }
+  
+  @media screen and (min-width: 1200px) {
   .roof .container {
     height: 80px;
     justify-content: space-between;

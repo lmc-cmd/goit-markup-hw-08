@@ -1,5 +1,9 @@
 .section-principles {
-  padding-top: 60px;
+  padding-top: 94px;
+  @media screen and (max-width:1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 .svg-div {
   width: 100%;
@@ -42,7 +46,7 @@
   height: 16px;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
-  @media screen and(min-width: 320px) {
+  @media screen and(min-width: 320px) and (max-width:767px){
     text-align: center;
     width: 100%;
   }

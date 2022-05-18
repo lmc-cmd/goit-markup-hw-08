@@ -23,7 +23,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+    & li:not(:last-child) {
+            margin-bottom: 8px;}
     & ul{
         display: flex;
             flex-direction: column;
