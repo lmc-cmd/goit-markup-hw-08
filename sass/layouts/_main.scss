@@ -4,12 +4,10 @@
   padding: 118px 0px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 80px) and (max-width: 479px) {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/main_mob_1x.jpg);
+ background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/main_mob_1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-  }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -24,6 +22,7 @@
     background-repeat: no-repeat;
   }
 }
+
 .main-title {
   font-weight: 900;
   font-size: 26px;

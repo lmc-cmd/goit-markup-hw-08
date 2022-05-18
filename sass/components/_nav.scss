@@ -1,22 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navi__list,
 .contacts {
     display: none;
+    
 }
 .navi__list a {
     font-weight: 500;
@@ -58,8 +43,6 @@
 .contacts {
     display: flex;
 }
-
-
 }
 
 .navi__list li:not(:last-child) {
