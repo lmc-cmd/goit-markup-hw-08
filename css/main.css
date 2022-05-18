@@ -1570,12 +1570,15 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .team-list-card {
     width: 450px;
   }
-  .team-list-card:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list-card:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -1585,6 +1588,9 @@ p {
   }
   .team-list-card:nth-child(odd) {
     margin-right: 30px;
+  }
+  .team-list-card:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }
 
