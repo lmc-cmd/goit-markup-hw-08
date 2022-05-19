@@ -456,9 +456,6 @@ p {
   margin: 0;
   padding: 0;
   display: inline-flex;
-  position: absolute;
-  top: 10px;
-  right: 23%;
   z-index: 4;
 }
 
@@ -490,7 +487,7 @@ p {
 
 @media screen and (min-width: 480px) {
   .menu-container.is-open {
-    justify-content: unset;
+    justify-content: space-between;
   }
 }
 
@@ -547,7 +544,7 @@ p {
 
 @media screen and (min-width: 480px) {
   .menu__list {
-    margin-bottom: 300px;
+    margin-bottom: 60px;
   }
 }
 
@@ -688,11 +685,19 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+.navi {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
   .navi {
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
+}
+
+@media screen and (min-width: 768px) {
   .navi a,
   .footer-contactus,
   .link-address {
