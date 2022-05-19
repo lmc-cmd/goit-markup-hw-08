@@ -46,7 +46,12 @@
   overflow: hidden;
   img {
     width: 100%;
+    @media screen and (max-width:479px) {
+      height: auto;
+      
+    }
   }
+
 }
 
 .hidden-text {
