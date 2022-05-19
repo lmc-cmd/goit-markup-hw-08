@@ -1545,7 +1545,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list img {
     width: 354px;
     height: 374px;
@@ -1583,9 +1583,6 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .team-list-card {
-    width: 354px;
-  }
   .team-list-card:nth-child(odd) {
     margin-right: 30px;
   }
