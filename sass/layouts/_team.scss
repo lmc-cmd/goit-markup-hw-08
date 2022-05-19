@@ -9,7 +9,7 @@
     width: 450px;
     height: 460px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px)  {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     height: 374px;
   }
@@ -35,21 +35,20 @@
   // @media screen and (max-width: 479px) {
   //   width: 450px;
   // }
-    @media screen  and (max-width:767px)  {
-      &:last-child{
-    margin-bottom: 0px;
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0px;
     }
-    }
+  }
 
   @media screen and (min-width: 768px) {
     // width: 354px;
     &:nth-child(odd) {
       margin-right: 30px;
     }
-        &:nth-last-child(-n + 2) {
-          margin-bottom: 0px;
-        }
-    
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
